@@ -10,7 +10,7 @@ const port = 5001; // Choose a port for your server
 app.use(cors());
 
 // API endpoint to fetch data from external API
-app.get('/api/leaderboard', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     const response = await axios.get('https://api.zealy.io/communities/idklmao/leaderboard', {
       headers: {
